@@ -1,0 +1,2 @@
+#Explaining rules
+print("\n**Welcome to BlackJack! I'll explain the rules.\nEach participant attempts to beat the dealer by getting a count as close to 21 as possible, \nwithout going over 21. We will be using the standard 52 card pack. It is up to each individual\nplayer if an ace is worth 1 or 11. Face cards are 10 and any other card is its pip value. Each\nplayer places a bet before the match, minimum bet is $2.**")
