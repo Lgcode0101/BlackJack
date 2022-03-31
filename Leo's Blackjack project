@@ -1,20 +1,31 @@
 import random
 #Sub
+Money=0
 def menu():
-    if(menu=="Easy"or menu=="easy"):
+    if(Menu=="Easy"or Menu=="easy"):
         print("You have chosen easy and will start the game with $500")
-    elif(menu=="Normal"or menu=="normal"):
+    elif(Menu=="Normal"or Menu=="normal"):
         print("You have chosen normal and will start the game with $250")
-    elif(menu=="Hard"or menu=="hard"):
+    elif(Menu=="Hard"or Menu=="hard"):
         print("You have chosen hard and will start the game with $50")
-    elif(menu=="Rules"or menu=="rules"):
+    elif(Menu=="Rules"or Menu=="rules"):
         print(rules)
     else:
         print("Invalid\n")
-        menu()
+def Value():
+    if(Menu=="Easy"or Menu=="easy"):
+        Money=+500
+        print("Your money is: $"+str(Money))
+    elif(Menu=="Normal" or Menu=="easy"):
+        Money=+250
+        print("Your money is: $"+str(Money))
+    elif(Menu=="Hard"or Menu=="hard"):
+        Money+=50
+        print("Your money is: $"+str(Money))
 #Main
 rules="\n**Welcome to BlackJack! I'll explain the rules.\nEach participant attempts to beat the dealer by getting a count as close to 21 as possible, \nwithout going over 21. We will be using the standard 52 card pack. It is up to each individual\nplayer if an ace is worth 1 or 11. Face cards are 10 and any other card is its pip value. Each\nplayer places a bet before the match, minimum bet is $2. The dealer gives one card face up to\neach player in rotation clockwise, and then one card face up to themselves. Another round of\ncards is then dealt face up to each player, but the dealer takes the second card face down. Thus,each player except the dealer receives two cards face up, and the dealer receives one card face up and one card face down.**"
-Menuinput=input("\nEasy\nNormal\nHard\nRules\nEnter: ")
-x=menu(Menuinput)
-print("You entered "+x)
-#Not working properly yet
+print("\nEasy\nNormal\nHard\nRules")
+Menu=input("Enter: ")
+menu()
+Value()
+#Everything is working properly, plan to add more tomorrow
